@@ -1,15 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar/NavBar";
+import SmoothScrollProvider from "@/provider/SmoothScrollProvider";
+import AOSProvider from "@/provider/AOSProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space',
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -20,9 +23,20 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body
+        className={`${inter.className}  min-h-full flex flex-col bg-[radial-gradient(circle_at_center,_#0f172a_0%,_#020617_50%,_#0f172a_100%)]`}
+      >
+        <NavBar />
+        <SmoothScrollProvider>
+          <AOSProvider>
+            <main>
+              {children}
+            </main>
+          </AOSProvider>
+        </SmoothScrollProvider>
+      </body>
     </html>
   );
 }
