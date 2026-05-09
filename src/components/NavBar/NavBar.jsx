@@ -32,7 +32,7 @@ export default function NavBar() {
         <ul className="hidden md:flex items-center gap-8 text-white">
           {navLinks.map((link, i) => (
             <motion.li
-              key={link.name}
+              key={i}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >

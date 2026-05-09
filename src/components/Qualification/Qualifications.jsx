@@ -35,8 +35,8 @@ export default function Qualifications() {
 
                 {/* TITLE - Improved */}
                 <div className="text-center mb-16" data-aos="fade-up">
-                    <h2 className="flex items-center gap-4 justify-center  text-3xl md:text-5xl font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
-                        Educational <span className="flex items-center gap-4 text-purple-400">Qualification <FaGraduationCap /> </span>
+                    <h2 className="flex items-center gap-4 justify-center  text-2xl md:text-5xl font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
+                        <span className="flex items-center gap-4 text-purple-400">Qualification <FaGraduationCap /> </span>
                     </h2>
                     <div className="w-20 h-1 bg-gradient-to-r from-purple-400 to-transparent mx-auto mt-4 rounded-full"></div>
                     <p className="text-gray-400 mt-4 max-w-md mx-auto">
