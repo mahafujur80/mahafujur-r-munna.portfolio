@@ -12,6 +12,7 @@ import {
 } from 'react-icons/fa'
 import { FiDownload, FiArrowDown } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
+import { CgHello } from 'react-icons/cg';
 
 export default function Hero() {
 
@@ -48,18 +49,13 @@ export default function Hero() {
                     </motion.p>
 
                     <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-3xl md:text-5xl font-bold text-white leading-tight"
+                        className="animate__animated animate__rubberBand animate__delay-1s text-3xl md:text-5xl font-bold text-white leading-tight"
                     >
-                        Hi, I'm <span className="text-purple-400">Mahafujur 
-                            <span className='mx-2'>
-                                <div className="tooltip" data-tip="Rahman">
-                                <button className="">R</button>
-                            </div>
-                            </span>
-                            Munna
-                        </span>
+                        Hi, I'm
+                        <br />
+                        <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-pink-500 bg-clip-text text-transparent">Mahafujur R Munna</span>
                     </motion.h1>
 
                     {/* 🔥 ANIMATED ROLE */}
@@ -128,26 +124,68 @@ export default function Hero() {
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    className="flex justify-center"
+                <div
+
+                    className="flex  justify-center lg:justify-end"
                 >
-                    <div className="relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-full shadow-[0_0_40px_rgba(217,70,239,0.6)]  p-1">
+                    <div className="hero-image relative">
 
-                        <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-blue-900">
+                        {/* ব্যাকগ্রাউন্ড গ্লো ইফেক্ট */}
+                        <div className="absolute inset-0 rounded-full bg-purple-500/30 blur-2xl animate-pulse"></div>
 
-                            <Image
-                                src={myPhoto}
-                                height={400}
-                                width={400}
-                                alt="profile"
-                                className="w-full h-full object-cover"
-                            />
+                        {/* মেইন ইমেজ কন্টেইনার */}
+                        <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+
+                            {/* অ্যানিমেটেড বর্ডার গ্রেডিয়েন্ট */}
+                            <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 opacity-75 blur-sm animate__animated animate__pulse animate__slower animate__infinite"></div>
+
+                            {/* ইনার বর্ডার */}
+                            <div className="relative w-full h-full rounded-full bg-gradient-to-br from-purple-500/20 to-transparent p-[2px]">
+
+                                {/* ইমেজ কন্টেইনার */}
+                                <div className="relative w-full h-full rounded-full overflow-hidden bg-black/50">
+
+                                    {/* ইমেজ */}
+                                    <Image
+                                        src={myPhoto}
+                                        fill
+                                        className="object-cover object-top"
+                                        alt="Mahafujur Rahman Munn"
+                                        priority
+                                    />
+
+                                    {/* ওভারলে গ্রেডিয়েন্ট */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-purple-900/30 to-transparent"></div>
+
+                                </div>
+                            </div>
+
+                            {/* ডেকোরেটিভ রিংস */}
+                            <div className="absolute inset-0 rounded-full border border-purple-500/30 pointer-events-none"></div>
+                            <div className="absolute -inset-3 rounded-full border border-purple-500/20 border-dashed pointer-events-none animate-spin-slow-reverse"></div>
+                            <div className="absolute -inset-6 rounded-full border border-purple-500/10 pointer-events-none"></div>
+
+                            {/* ছোট ডট ডেকোরেশন */}
+                            <div className="absolute -top-2 -right-2 w-4 h-4 rounded-full bg-purple-500 shadow-lg shadow-purple-500/50"></div>
+                            <div className="absolute -bottom-2 -left-2 w-3 h-3 rounded-full bg-pink-500 shadow-lg shadow-pink-500/50"></div>
+                            <div className="absolute top-1/2 -right-4 w-2 h-2 rounded-full bg-cyan-400"></div>
+                            <div className="absolute bottom-1/3 -left-4 w-2 h-2 rounded-full bg-purple-400"></div>
 
                         </div>
+
+                        {/* অনলাইন স্ট্যাটাস ইন্ডিকেটর */}
+                        <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-green-500 rounded-full p-1.5 shadow-lg shadow-green-500/30">
+                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                        </div>
+
+                        {/* এক্সপেরিয়েন্স ব্যাজ */}
+                        <div className="absolute -top-2 -left-2 md:-top-4 md:-left-4 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full px-3 py-1.5 shadow-lg shadow-purple-500/30">
+                            <p className="text-[10px] md:text-xs font-bold text-white">MERN</p>
+                            <p className="text-[8px] md:text-[10px] text-purple-200"></p>
+                        </div>
+
                     </div>
-                </motion.div>
+                </div>
 
             </div>
 

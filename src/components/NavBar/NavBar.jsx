@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
 import logo from '../../../public/logo-port.png'
+import Image from 'next/image'
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -22,9 +23,10 @@ export default function NavBar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-lg">
 
         {/* LOGO */}
-        <Link href="/" className="text-2xl font-bold text-white">
+        {/* <Link href="/" className="text-2xl font-bold text-white">
           MRM<span className="text-purple-400">.dev</span> 
-        </Link>
+        </Link> */}
+        <Image src={logo} alt="logo" width={200} height={200} className='w-20' />
 
         {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8 text-white">

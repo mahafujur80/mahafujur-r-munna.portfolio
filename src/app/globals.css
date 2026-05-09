@@ -8,14 +8,14 @@
   gap: 8px;
   padding: 12px 18px;
   border-radius: 12px;
-  background: #a855f7;
+  background: linear-gradient(to right, #a855f7, #d946ef, #ec4899);
   color: white;
   font-weight: 500;
   transition: 0.3s;
 }
 
 .btn-primary:hover {
-  background: #9333ea;
+    background: linear-gradient(to left, #a855f7, #d946ef);
 }
 
 .btn-outline {
@@ -63,4 +63,22 @@
          transition-all duration-300 hover:scale-105 
          hover:bg-purple-500/20 hover:border-purple-400/60 
          cursor-default;
+};
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.hero-image {
+  animation: floating 3s ease-in-out infinite;
 }

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaHome, FaArrowLeft, FaEnvelope } from "react-icons/fa"
+import { FaHome} from "react-icons/fa"
 
 export default function NotFound() {
   return (
