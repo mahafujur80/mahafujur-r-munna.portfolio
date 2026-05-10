@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa"
 import { SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiVercel, SiBetterauth } from "react-icons/si"
 
-export default function Skills2() {
+const Skills2 =()=> {
 
   const skillsData = [
     {
@@ -102,3 +102,4 @@ export default function Skills2() {
     </section>
   )
 }
+export default Skills2;

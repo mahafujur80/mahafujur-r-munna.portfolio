@@ -1,6 +1,6 @@
 'use client'
 
-import myPhoto from '../../../public/my-photo.png';
+import myPhoto from '@/assets/my-photo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -12,9 +12,9 @@ import {
 } from 'react-icons/fa'
 import { FiDownload, FiArrowDown } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
-import { CgHello } from 'react-icons/cg';
 
-export default function Hero() {
+
+const Hero = () => {
 
     const roles = [
         "Frontend Developer",
@@ -33,7 +33,7 @@ export default function Hero() {
     }, [])
 
     return (
-        <section className="px-4 min-h-screen flex items-center  pt-28">
+        <section className="relative px-4 min-h-screen flex items-center  pt-28">
 
             <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
@@ -193,7 +193,8 @@ export default function Hero() {
             <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 text-purple-400 text-2xl"
+                // এখানে absolute এবং z-10 যোগ করা হয়েছে
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 text-purple-400 text-2xl z-10"
             >
                 <FiArrowDown />
             </motion.div>
@@ -201,3 +202,4 @@ export default function Hero() {
         </section>
     )
 }
+export default Hero;

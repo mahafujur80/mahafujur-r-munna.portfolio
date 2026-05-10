@@ -1,5 +1,5 @@
 
-export default function AboutMe() {
+const AboutMe =()=> {
     return (
         <section className="px-4 md:px-8 py-20 text-white">
 
@@ -48,7 +48,6 @@ export default function AboutMe() {
 
                 {/* RIGHT IMAGE / CARD */}
                 <div
-                    
                     className="flex justify-center">
                     <div className="w-full max-w-sm p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl">
 
@@ -74,3 +73,4 @@ export default function AboutMe() {
         </section>
     )
 }
+export default AboutMe;

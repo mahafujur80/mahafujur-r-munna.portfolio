@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
-import logo from '../../../public/logo-port.png'
+import logo from '@/assets/logo-port.png'
 import Image from 'next/image'
 
 const navLinks = [
@@ -14,7 +14,7 @@ const navLinks = [
   { name: 'Contact', path: '/contact' },
 ]
 
-export default function NavBar() {
+const NavBar =()=> {
   const [open, setOpen] = useState(false)
 
   return (
@@ -108,3 +108,4 @@ export default function NavBar() {
     </header>
   )
 }
+export default NavBar;

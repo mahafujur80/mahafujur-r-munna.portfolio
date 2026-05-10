@@ -17,7 +17,7 @@ import {
   SiVercel,
 } from "react-icons/si"
 
-export default function TechStack() {
+const TechStack =()=> {
 
   const techStack = [
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -91,3 +91,4 @@ export default function TechStack() {
     </section>
   )
 }
+export default TechStack;

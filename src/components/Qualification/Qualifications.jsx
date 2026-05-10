@@ -1,6 +1,6 @@
 import { FaGraduationCap } from "react-icons/fa"
 
-export default function Qualifications() {
+const Qualifications =()=> {
 
     const educationData = [
         {
@@ -99,3 +99,4 @@ export default function Qualifications() {
         </section>
     )
 }
+export default Qualifications;

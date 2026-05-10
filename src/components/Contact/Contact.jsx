@@ -12,12 +12,12 @@ import {
   HiOutlineLocationMarker,
 } from 'react-icons/hi'
 
-export default function Contact() {
+const Contact=()=> {
   return (
     <div className="min-h-screen pt-24 pb-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         
-        {/* হেডার সেকশন */}
+        {/* Header section*/}
         <div className="text-center mb-12">
           <div className="inline-flex px-3 py-1 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-400 text-xs tracking-[3px] uppercase mb-4">
             Get In Touch
@@ -30,18 +30,18 @@ export default function Contact() {
           </p>
         </div>
 
-        {/* কন্টেন্ট গ্রিড */}
+        {/*content grid */}
         <div className="grid md:grid-cols-2 gap-8">
           
-          {/* বাম সাইড - কন্ট্যাক্ট ইনফো */}
+          {/* left side info */}
           <div className="space-y-5">
             
-            {/* কন্ট্যাক্ট কার্ড */}
+            {/* contact card*/}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-5">
               <h3 className="text-xl font-semibold text-white mb-6">Contact Info</h3>
               
               <div className="space-y-3">
-                {/* ইমেইল */}
+                {/* email */}
                 <div className="flex items-center gap-4 p-3 rounded-xl bg-black/30 border border-white/5 hover:border-blue-500/30 transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
                     <HiOutlineMail />
@@ -54,7 +54,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* ফোন */}
+                {/* phone */}
                 <div className="flex items-center gap-4 p-3 rounded-xl bg-black/30 border border-white/5 hover:border-blue-500/30 transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
                     <HiOutlinePhone />
@@ -67,7 +67,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {/* লোকেশন */}
+                {/* locations */}
                 <div className="flex items-center gap-4 p-3 rounded-xl bg-black/30 border border-white/5 hover:border-blue-500/30 transition-all group">
                   <div className="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl group-hover:scale-110 transition-transform">
                     <HiOutlineLocationMarker />
@@ -80,7 +80,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* সোশ্যাল কার্ড */}
+            {/* social card */}
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-5">
               <h3 className="text-xl font-semibold text-white mb-6">Follow Me</h3>
               <div className="flex gap-4">
@@ -100,7 +100,7 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* ডান সাইড - ফর্ম */}
+          {/* right side form*/}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-5">
             <h3 className="text-xl font-semibold text-white mb-2">Send a Message</h3>
             <p className="text-gray-400 text-sm mb-6">I'll get back to you within 24 hours</p>
@@ -144,3 +144,4 @@ export default function Contact() {
     </div>
   )
 }
+export default Contact;
