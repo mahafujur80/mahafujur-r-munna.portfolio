@@ -15,7 +15,7 @@ export default function NotFound() {
         
         {/* 404 Number with Animation */}
         <div className="relative mb-8">
-          <h1 className="text-8xl md:text-9xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-bounce">
+          <h1 className="text-8xl md:text-9xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate__animated animate__jackInTheBox ">
             404
           </h1>
           <div className="absolute inset-0 blur-2xl bg-purple-500/20 rounded-full -z-10"></div>

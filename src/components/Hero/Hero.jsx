@@ -43,7 +43,7 @@ const Hero = () => {
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-sm tracking-widest uppercase text-[#d946ef]"
+                      className="inline-block px-4 py-1 rounded-full bg-purple-500/20 border border-purple-400/30 text-purple-300 text-sm mb-4"
                     >
                         Welcome To My Portfolio
                     </motion.p>
