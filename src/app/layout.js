@@ -3,7 +3,6 @@ import "./globals.css";
 import 'animate.css';
 import NavBar from "@/components/NavBar/NavBar";
 import SmoothScrollProvider from "@/provider/SmoothScrollProvider";
-import AOSProvider from "@/provider/AOSProvider";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,11 +30,9 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         <SmoothScrollProvider>
-          <AOSProvider>
             <main>
               {children}
             </main>
-          </AOSProvider>
         </SmoothScrollProvider>
       </body>
     </html>

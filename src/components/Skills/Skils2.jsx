@@ -51,7 +51,7 @@ const Skills2 =()=> {
       <div className="max-w-6xl mx-auto">
         
         {/* TITLE */}
-         <div className="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
+         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-white via-purple-200 to-purple-400 bg-clip-text text-transparent">
             My <span className="text-purple-400">Skills</span>
           </h2>
@@ -62,7 +62,7 @@ const Skills2 =()=> {
         </div>
 
         {/* SKILLS GRID */}
-        <div data-aos="fade-up" data-aos-delay="500"
+        <div
          className="grid md:grid-cols-3 gap-6">
           {skillsData.map((category, idx) => (
             <div 

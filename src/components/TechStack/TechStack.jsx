@@ -37,7 +37,6 @@ const TechStack =()=> {
 
   return (
     <section
-      data-aos="fade-up"
       className="px-4 md:px-8 py-20 text-white"
     >
 
@@ -66,7 +65,7 @@ const TechStack =()=> {
               key={i}
               className="group hover:-translate-y-2  transition-all duration-300"
             >
-              <div data-aos= 'zoom-in' data-aos-duration="500" 
+              <div
               className="flex flex-col items-center justify-center gap-2 "
               >
                 <div >

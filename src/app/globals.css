@@ -2,7 +2,9 @@
 @plugin "daisyui";
 
 
-.btn-primary {
+
+
+/* .btn-primary {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -12,13 +14,13 @@
   color: white;
   font-weight: 500;
   transition: 0.3s;
-}
+} */
 
-.btn-primary:hover {
+/* .btn-primary:hover {
     background: linear-gradient(to left, #a855f7, #d946ef);
-}
+} */
 
-.btn-outline {
+/* .btn-outline {
   padding: 12px 18px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -26,13 +28,13 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   transition: 0.3s;
-}
-
+} */
+/* 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.1);
-}
+} */
 
-.social-icon {
+/* .social-icon {
   width: 44px;
   height: 44px;
   display: flex;
@@ -46,8 +48,8 @@
 }
 
 .social-icon:hover {
-  background: #a855f7;
-}
+ background: linear-gradient(to right, #a855f7, #d946ef, #ec4899);
+} */
 
 /* .container {
   @apply max-w-7xl mx-auto px-4 md:px-8;
