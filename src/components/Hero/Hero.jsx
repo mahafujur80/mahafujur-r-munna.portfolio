@@ -181,8 +181,7 @@ const Hero = () => {
                                         src={myPhoto}
                                         fill
                                         className="object-cover object-top transition-transform duration-500 hover:scale-105"
-                                        alt="Mahafujur Rahman Munn"
-                                        priority
+                                        alt="Mahafujur Rahman Munna"
                                     />
 
                                     {/* ওভারলে গ্রেডিয়েন্ট */}
