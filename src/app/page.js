@@ -4,7 +4,6 @@ import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Qualifications from "@/components/Qualification/Qualifications";
 import Skills from "@/components/Skills/Skills";
-import Skills2 from "@/components/Skills/Skils2";
 import TechStack from "@/components/TechStack/TechStack";
 
 export default function Home() {
@@ -13,8 +12,7 @@ export default function Home() {
       <Hero/>
       <AboutMe/>
       <TechStack/>
-      {/* <Skills/> */}
-      <Skills2/>
+      <Skills/>
       <Qualifications/>
       <Contact/>
       <Footer/>

@@ -33,9 +33,9 @@ const Hero = () => {
     }, [])
 
     return (
-        <section className="relative px-4 min-h-screen flex items-center pt-28">
+        <section  className="relative px-4 min-h-screen flex items-center pt-28">
 
-            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-6xl  mx-auto grid lg:grid-cols-2 gap-22 items-center">
 
                 {/* LEFT */}
                 <div className="space-y-6">

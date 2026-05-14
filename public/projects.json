@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "E-Commerce Platform",
+    "image": "/images/projects/ecommerce.jpg",
+    "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
+    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
+    "github": "https://github.com/yourusername/ecommerce-platform",
+    "liveDemo": "https://ecommerce-demo.com",
+    "year": "2024",
+    "category": "Full Stack"
+  },
+  {
+    "id": 1,
+    "name": "E-Commerce Platform",
+    "image": "/images/projects/ecommerce.jpg",
+    "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
+    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
+    "github": "https://github.com/yourusername/ecommerce-platform",
+    "liveDemo": "https://ecommerce-demo.com",
+    "year": "2024",
+    "category": "Full Stack"
+  },
+  {
+    "id": 1,
+    "name": "E-Commerce Platform",
+    "image": "/images/projects/ecommerce.jpg",
+    "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
+    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
+    "github": "https://github.com/yourusername/ecommerce-platform",
+    "liveDemo": "https://ecommerce-demo.com",
+    "year": "2024",
+    "category": "Full Stack"
+  },
+  {
+    "id": 1,
+    "name": "E-Commerce Platform",
+    "image": "/images/projects/ecommerce.jpg",
+    "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
+    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
+    "github": "https://github.com/yourusername/ecommerce-platform",
+    "liveDemo": "https://ecommerce-demo.com",
+    "year": "2024",
+    "category": "Full Stack"
+  },
+]

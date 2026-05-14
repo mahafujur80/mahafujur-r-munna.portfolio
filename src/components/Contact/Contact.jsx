@@ -14,7 +14,7 @@ import {
 
 const Contact=()=> {
   return (
-    <div className="min-h-screen pt-24 pb-16 px-4 md:px-8">
+    <section className="min-h-screen pt-24 pb-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         
         {/* Header section*/}
@@ -141,7 +141,7 @@ const Contact=()=> {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default Contact;

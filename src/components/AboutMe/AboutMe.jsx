@@ -24,9 +24,9 @@ const AboutMe = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-5xl font-bold text-center md:text-left"
+            className="text-2xl md:text-5xl font-bold text-gray-200 text-center md:text-left"
           >
-            About{' '}
+            About
             <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">
               Me
             </span>

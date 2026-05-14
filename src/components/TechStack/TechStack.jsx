@@ -16,8 +16,9 @@ import {
   SiFigma,
   SiVercel,
 } from "react-icons/si"
+import TechCard from "../UI-kid/TechCard"
 
-const TechStack =()=> {
+const TechStack = () => {
 
   const techStack = [
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
@@ -45,9 +46,10 @@ const TechStack =()=> {
         {/* TITLE */}
         <div className="text-center mb-14">
 
-          <h2 className="text-3xl md:text-5xl font-bold">
-            My <span className="text-purple-400">Tech Stack</span>
+          <h2 className="text-2xl md:text-5xl font-bold">
+            My <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Tech Stack</span>
           </h2>
+          <div className="w-30 h-1 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent mt-2 rounded-full mx-auto"></div>
 
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
             Technologies and tools I use to build modern,
@@ -60,27 +62,7 @@ const TechStack =()=> {
         <div className="flex items-center justify-center gap-3 flex-wrap">
 
           {techStack.map((tech, i) => (
-
-            <div
-              key={i}
-              className="group hover:-translate-y-2  transition-all duration-300"
-            >
-              <div
-              className="flex flex-col items-center justify-center gap-2 "
-              >
-                <div >
-                  {/* ICON */}
-                  <div className="text-3xl flex items-center justify-center h-15 w-15 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-400/40 group-hover:scale-110 transition-all duration-500">
-                    {tech.icon}
-                  </div>
-                </div>
-                {/* TEXT */}
-                <p className="text-sm text-gray-300 transition-all duration-500 group-hover:text-purple-300">
-                  {tech.name}
-                </p>
-
-              </div>
-            </div>
+            <TechCard tech={tech} key={i} />
           ))}
 
         </div>
