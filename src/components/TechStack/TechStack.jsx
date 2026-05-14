@@ -30,7 +30,6 @@ const TechStack = () => {
     { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
     { name: "Express.js", icon: <SiExpress className="text-white" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-400" /> },
-    { name: "Firebase", icon: <SiFirebase className="text-yellow-500" /> },
     { name: "Git", icon: <FaGitAlt className="text-orange-500" /> },
     { name: "Figma", icon: <SiFigma className="text-pink-500" /> },
     { name: "Vercel", icon: <SiVercel className="text-white" /> },
