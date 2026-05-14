@@ -180,6 +180,8 @@ const Hero = () => {
                                     <Image
                                         src={myPhoto}
                                         fill
+                                        priority
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         className="object-cover object-top transition-transform duration-500 hover:scale-105"
                                         alt="Mahafujur Rahman Munna"
                                     />

@@ -62,7 +62,7 @@ const TechStack = () => {
         <div className="flex items-center justify-center gap-3 flex-wrap">
 
           {techStack.map((tech, i) => (
-            <TechCard tech={tech} key={i} />
+            <TechCard tech={tech} key={i} index={i} />
           ))}
 
         </div>

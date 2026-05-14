@@ -65,7 +65,7 @@ const Skills =()=> {
         {/* SKILLS GRID */}
         <div
          className="grid md:grid-cols-3 gap-6">
-          {skillsData.map((category, idx) => <SkillCard key={idx} category={category}/>)}
+          {skillsData.map((category, idx) => <SkillCard key={idx} category={category} index={idx}/>)}
         </div>
 
       </div>

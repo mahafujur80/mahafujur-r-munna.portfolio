@@ -26,8 +26,9 @@ const ProjectCard = ({ project, index }) => {
           <Image
             src={project.image}
             alt={project.name}
-            width={200}
-            height={200}
+            width={400}
+            height={300}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
             className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
           />
         </figure>

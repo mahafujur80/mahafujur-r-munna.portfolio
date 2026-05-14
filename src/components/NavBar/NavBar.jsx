@@ -19,28 +19,26 @@ const NavBar = () => {
   const pathName = usePathname()
 
   const [open, setOpen] = useState(false)
-  const [lastScrollY, setLastScrollY] = useState(0)
   const [showNav, setShowNav] = useState(true)
 
   // 🔥 Scroll Hide/Show Effect
   useEffect(() => {
+    let lastScrollY = window.scrollY
     const handleScroll = () => {
       const currentScrollY = window.scrollY
+      if (Math.abs(currentScrollY - lastScrollY) < 10) return
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Scroll down - hide navbar
         setShowNav(false)
       } else {
-        // Scroll up - show navbar
         setShowNav(true)
       }
-
-      setLastScrollY(currentScrollY)
+      lastScrollY = currentScrollY
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [lastScrollY])
+  }, [])
 
   return (
     <header className={`

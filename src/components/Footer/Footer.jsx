@@ -1,184 +1,112 @@
-'use client'
-import { motion } from 'framer-motion';
-import 'animate.css';
 import logo from '@/assets/logo-port.png'
 import Image from 'next/image';
 import Link from 'next/link';
+import { FadeIn } from '../UI-kid/AnimatedSection';
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 }
-  };
-
   return (
-    <footer className=" text-white pt-12 pb-6 mt-12">
+    <footer className="text-white pt-12 pb-6 mt-12 relative overflow-hidden">
+      
+      {/* Background decoration */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent"></div>
+
       <div className="max-w-6xl mx-auto px-4 md:px-6">
 
         {/* Main Footer Grid - Left | Center | Right */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-white/10">
 
           {/* LEFT SECTION - Logo + About Text */}
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-center col-span-5   md:text-left"
-          >
-            {/* Logo */}
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
-              <Image src={logo} alt="logo" width={100} height={100}
-              />
-            </div>
+          <div className="text-center col-span-1 md:col-span-5 md:text-left">
+            <FadeIn direction="up" delay={0.1}>
+              {/* Logo */}
+              <div className="flex items-center justify-center md:justify-start gap-2 mb-3">
+                <Image 
+                  src={logo} 
+                  alt="logo" 
+                  width={100} 
+                  height={40}
+                  className="w-auto h-10"
+                />
+              </div>
 
-            {/* About Text */}
-            <p className="text-gray-400 text-sm leading-relaxed mb-2 max-w-xs mx-auto md:mx-0">
-              Turning ideas into modern digital experiences through creative design and clean code.
-            </p>
-            <p className="text-gray-500 text-xs">
-              ✨ Quality meets creativity
-            </p>
-          </motion.div>
+              {/* About Text */}
+              <p className="text-gray-400 text-sm leading-relaxed mb-2 max-w-xs mx-auto md:mx-0">
+                Turning ideas into modern digital experiences through creative design and clean code.
+              </p>
+              <p className="text-gray-500 text-xs">
+                ✨ Quality meets creativity
+              </p>
+            </FadeIn>
+          </div>
 
           {/* CENTER SECTION - Quick Links */}
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-left col-span-4 "
-          >
-            <h4 className="text-lg font-semibold mb-4 inline-block relative">
-              Quick Links
-              <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] rounded-full"></span>
-            </h4>
-            <nav>
-              <ul className="flex flex-col gap-2">
-                <li>
-                  <motion.div whileHover={{ x: 5 }}>
-                    <Link
-                      href="/"
-                      className="text-gray-400 hover:text-[#d946ef] transition-all duration-300 inline-block"
-                    >
-                      Home
-                    </Link>
-                  </motion.div>
-                </li>
-                <li>
-                  <motion.div whileHover={{ x: 5 }}>
-                    <Link
-                      href="/projects"
-                      className="text-gray-400 hover:text-[#d946ef] transition-all duration-300 inline-block"
-                    >
-                      Projects
-                    </Link>
-                  </motion.div>
-                </li>
-                <li>
-                  <motion.div whileHover={{ x: 5 }}>
-                    <Link
-                      href="/blog"
-                      className="text-gray-400 hover:text-[#d946ef] transition-all duration-300 inline-block"
-                    >
-                      Blog
-                    </Link>
-                  </motion.div>
-                </li>
-                <li>
-                  <motion.div whileHover={{ x: 5 }}>
-                    <Link
-                      href="/contact"
-                      className="text-gray-400 hover:text-[#d946ef] transition-all duration-300 inline-block"
-                    >
-                      Contact
-                    </Link>
-                  </motion.div>
-                </li>
-              </ul>
-            </nav>
-          </motion.div>
+          <div className="text-left col-span-1 md:col-span-4">
+            <FadeIn direction="up" delay={0.2}>
+              <h4 className="text-lg font-semibold mb-4 inline-block relative">
+                Quick Links
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] rounded-full"></span>
+              </h4>
+              <nav>
+                <ul className="flex flex-col gap-2">
+                  {[
+                    { name: 'Home', href: '/' },
+                    { name: 'Projects', href: '#projects' },
+                    { name: 'About', href: '#about' },
+                    { name: 'Contact', href: '#contact' },
+                  ].map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={link.href}
+                        className="text-gray-400 hover:text-[#d946ef] transition-all duration-300 inline-block hover:translate-x-1"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </FadeIn>
+          </div>
 
           {/* RIGHT SECTION - Social Links */}
-          <motion.div
-            variants={fadeInUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="text-left  col-span-3"
-          >
-            <h4 className="text-lg font-semibold mb-4 inline-block relative">
-              Connect With Me
-              <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] rounded-full"></span>
-            </h4>
-            <ul className="flex flex-col gap-2 items-center items-start">
-              <li>
-                <motion.div whileHover={{ x: -5 }}>
-                  <Link
-                    href="https://facebook.com"
-                    target="_blank"
-                    className="text-gray-400 hover:text-[#a855f7] transition-all duration-300 inline-flex items-center gap-2"
-                  >
-                    Facebook
-                  </Link>
-                </motion.div>
-              </li>
-
-              <li>
-                <motion.div whileHover={{ x: -5 }}>
-                  <Link
-                    href="https://instagram.com"
-                    target="_blank"
-                    className="text-gray-400 hover:text-[#d946ef] transition-all duration-300 inline-flex items-center gap-2"
-                  >
-                    Instagram
-                  </Link>
-                </motion.div>
-              </li>
-
-              <li>
-                <motion.div whileHover={{ x: -5 }}>
-                  <Link
-                    href="https://github.com"
-                    target="_blank"
-                    className="text-gray-400 hover:text-[#ec4899] transition-all duration-300 inline-flex items-center gap-2"
-                  >
-                    GitHub
-                  </Link>
-                </motion.div>
-              </li>
-
-              <li>
-                <motion.div whileHover={{ x: -5 }}>
-                  <Link
-                    href="https://linkedin.com"
-                    target="_blank"
-                    className="text-gray-400 hover:text-[#a855f7] transition-all duration-300 inline-flex items-center gap-2"
-                  >
-                    LinkedIn
-                  </Link>
-                </motion.div>
-              </li>
-            </ul>
-          </motion.div>
+          <div className="text-left col-span-1 md:col-span-3">
+            <FadeIn direction="up" delay={0.3}>
+              <h4 className="text-lg font-semibold mb-4 inline-block relative">
+                Connect With Me
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] rounded-full"></span>
+              </h4>
+              <ul className="flex flex-col gap-2">
+                {[
+                  { name: 'Facebook', href: 'https://www.facebook.com/mahafujurrahman480', color: 'hover:text-[#a855f7]' },
+                  { name: 'Instagram', href: 'https://www.instagram.com/mahafujur80?igsh=dHhhZDduazJ2ODBh', color: 'hover:text-[#d946ef]' },
+                  { name: 'GitHub', href: 'https://github.com/mahafujur80', color: 'hover:text-[#ec4899]' },
+                  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/mahafujur-rahman-munna/', color: 'hover:text-[#a855f7]' },
+                ].map((social) => (
+                  <li key={social.name}>
+                    <Link
+                      href={social.href}
+                      target="_blank"
+                      className={`text-gray-400 ${social.color} transition-all duration-300 inline-flex items-center gap-2 hover:-translate-x-1`}
+                    >
+                      {social.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </FadeIn>
+          </div>
         </div>
 
         {/* BOTTOM SECTION - Copyright */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="text-center pt-6"
-        >
-          <p className="text-gray-500 text-sm">
-            © {year} MRM All Rights Reserved
-          </p>
-        </motion.div>
+        <div className="text-center pt-6">
+          <FadeIn direction="none" delay={0.4}>
+            <p className="text-gray-500 text-sm">
+              © {year} MRM All Rights Reserved
+            </p>
+          </FadeIn>
+        </div>
       </div>
     </footer>
   );

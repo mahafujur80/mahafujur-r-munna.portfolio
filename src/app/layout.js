@@ -1,6 +1,5 @@
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import 'animate.css';
 import NavBar from "@/components/NavBar/NavBar";
 import SmoothScrollProvider from "@/provider/SmoothScrollProvider";
 
