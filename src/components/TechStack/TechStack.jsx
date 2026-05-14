@@ -46,8 +46,8 @@ const TechStack = () => {
         {/* TITLE */}
         <div className="text-center mb-14">
 
-          <h2 className="text-2xl md:text-5xl font-bold">
-            My <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Tech Stack</span>
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Dev <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Stack</span>
           </h2>
           <div className="w-30 h-1 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent mt-2 rounded-full mx-auto"></div>
 

@@ -67,6 +67,14 @@
          cursor-default;
 };
 
+@layer utilities {
+  /* লোডিং টাইম অ্যানিমেশন নিয়ন্ত্রণ */
+  .no-animation {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 @keyframes floating {
   0% {
     transform: translateY(0px);

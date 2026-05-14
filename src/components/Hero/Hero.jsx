@@ -8,11 +8,11 @@ import {
     FaGithub,
     FaLinkedin,
     FaFacebook,
-    FaTwitter,
     FaBriefcase,
 } from 'react-icons/fa'
 import { FiDownload, FiArrowDown } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
+import { GrInstagram } from 'react-icons/gr'
 
 const Hero = () => {
 
@@ -91,7 +91,7 @@ const Hero = () => {
                     >
                         {/* Resume Button */}
                         <a
-                            href="/resume.pdf"
+                            href="#"
                             download
                             className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#a855f7]/50"
                         >
@@ -101,7 +101,7 @@ const Hero = () => {
 
                         {/* Projects Button */}
                         <Link
-                            href="/projects"
+                            href="#"
                             className="group flex items-center gap-2 px-6 py-3 rounded-xl border border-[#a855f7] text-white font-semibold transition-all duration-300 hover:scale-105 hover:bg-[#a855f7]/20 hover:border-[#d946ef]"
                         >
                             Projects
@@ -110,7 +110,7 @@ const Hero = () => {
 
                         {/* 🔥 NEW: Hire Me Button */}
                         <Link
-                            href="/contact"
+                            href="#"
                             className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-semibold transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-[#a855f7] hover:to-[#ec4899] hover:border-transparent hover:shadow-lg hover:shadow-[#ec4899]/50"
                         >
                             <FaBriefcase />
@@ -125,10 +125,10 @@ const Hero = () => {
                         className="flex gap-4 pt-4"
                     >
                         {[
-                            { icon: <FaGithub />, link: 'https://github.com', label: 'GitHub', color: 'hover:text-[#a855f7]' },
-                            { icon: <FaLinkedin />, link: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:text-[#d946ef]' },
-                            { icon: <FaFacebook />, link: 'https://facebook.com', label: 'Facebook', color: 'hover:text-[#ec4899]' },
-                            { icon: <FaTwitter />, link: 'https://twitter.com', label: 'Twitter', color: 'hover:text-[#a855f7]' },
+                            { icon: <FaGithub />, link: 'https://github.com/mahafujur80', label: 'GitHub', color: 'hover:text-[#a855f7]' },
+                            { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/mahafujur-rahman-munna/', label: 'LinkedIn', color: 'hover:text-[#d946ef]' },
+                            { icon: <FaFacebook />, link: 'https://www.facebook.com/mahafujurrahman480', label: 'Facebook', color: 'hover:text-[#ec4899]' },
+                            { icon: <GrInstagram />, link: 'https://www.instagram.com/mahafujur80?igsh=dHhhZDduazJ2ODBh', label: 'Twitter', color: 'hover:text-[#a855f7]' },
                         ].map((s, i) => (
                             <motion.a
                                 key={i}

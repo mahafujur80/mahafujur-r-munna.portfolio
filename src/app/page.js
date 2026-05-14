@@ -5,6 +5,7 @@ import Hero from "@/components/Hero/Hero";
 import Qualifications from "@/components/Qualification/Qualifications";
 import Skills from "@/components/Skills/Skills";
 import TechStack from "@/components/TechStack/TechStack";
+import Projects from "../components/Projects/page";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <TechStack/>
       <Skills/>
       <Qualifications/>
+      <Projects/>
       <Contact/>
       <Footer/>
     </div>

@@ -36,7 +36,7 @@ const Qualifications =()=> {
 
                 {/* TITLE - Improved */}
                 <div className="text-center mb-16">
-                    <h2 className="text-2xl md:text-5xl text-gray-200 font-bold text-center flex justify-center">
+                    <h2 className="text-2xl md:text-4xl text-gray-200 font-bold text-center flex justify-center">
                       Edu<span className="flex items-center gap-4 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">cation<FaGraduationCap  className="text-purple-400"/> </span>
                     </h2>
                    <div className="w-30 h-1 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent mt-2 rounded-full mx-auto"></div>

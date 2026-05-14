@@ -53,8 +53,8 @@ const Skills =()=> {
         
         {/* TITLE */}
          <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-5xl font-bold text-gray-200">
-            My <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Skills</span>
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-200">
+            My <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Expertise</span>
           </h2>
             <div className="w-30 h-1 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent mt-2 rounded-full mx-auto"></div>
           <p className="text-gray-400 mt-4 max-w-md mx-auto">
