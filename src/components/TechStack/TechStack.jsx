@@ -37,6 +37,7 @@ const TechStack = () => {
 
   return (
     <section
+    id="tech"
       className="px-4 md:px-8 py-20 text-white"
     >
 

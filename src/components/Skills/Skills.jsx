@@ -48,7 +48,7 @@ const Skills =()=> {
   ]
 
   return (
-    <section className="px-4 md:px-8 py-20 text-white">
+    <section id="skills" className="px-4 md:px-8 py-20 text-white">
       <div className="max-w-6xl mx-auto">
         
         {/* TITLE */}

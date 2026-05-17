@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "E-Commerce Platform",
+    "name": "Project Coming...",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
     "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
     "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
@@ -12,10 +12,10 @@
   },
   {
     "id": 2,
-    "name": "E-Commerce Platform",
+    "name": "Project Coming..",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
     "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
-    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
+    "tech": ["React", "Node.js", "MongoDB", "Tailwind CSS", "Express",  "Redux Toolkit", "Stripe"],
     "github": "https://github.com/yourusername/ecommerce-platform",
     "liveDemo": "https://ecommerce-demo.com",
     "year": "2024",
@@ -23,24 +23,24 @@
   },
   {
     "id": 3,
-    "name": "A Simple Social Media Web App",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
-    "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
-    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
-    "github": "https://github.com/yourusername/ecommerce-platform",
-    "liveDemo": "https://ecommerce-demo.com",
-    "year": "2024",
-    "category": "Full Stack"
+    "name": "KeenKeper – Connect & Share Social App",
+    "image": "https://res.cloudinary.com/dao8rjwiw/image/upload/v1779040619/Gemini_Generated_Image_ycd5liycd5liycd5_fekucj.png",
+    "overview": "This is a React-based social media frontend design where users can see posts, profiles, and UI interactions. It is built to practice component-based architecture and responsive design.", 
+    "tech": ["React", "Tailwind CSS", "React Router", "Recharts", "DaisyUI"],
+    "github": "https://github.com/mahafujur80/KeenKeeper-PHA07",
+    "liveDemo": "https://keen-keeper-pha-07.vercel.app/",
+    "year": "2026",
+    "category": "Font-End"
   },
   {
     "id": 4,
     "name": "SunCart A Summer Special Product Sell Site",
-    "image": "https://res.cloudinary.com/dao8rjwiw/image/upload/v1778768947/photo-collage.png_duqqnr.png",
+    "image": "https://res.cloudinary.com/dao8rjwiw/image/upload/v1779040618/Gemini_Generated_Image_t5c9kpt5c9kpt5c9_i7cocr.png",
     "overview": "Suncart is a full-stack e-commerce web application featuring secure and modern authentication using Better Auth. It provides seamless product browsing, cart management, and checkout functionality with a focus on performance, scalability, and user experience.", 
-    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
+    "tech": ["Next.js", "Tailwind CSS", "javaScript", "Hero Ui","Better Auth" ],
     "github": "https://github.com/mahafujur80/SunCart-PHA08",
     "liveDemo": "https://suncart-e-com.vercel.app/",
     "year": "2026",
-    "category": "Full Stack"
+    "category": "MERN Stack"
   }
 ]

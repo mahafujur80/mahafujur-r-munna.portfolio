@@ -9,8 +9,11 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const navLinks = [
-  { name: 'Home', path: '/' },
+  { name: 'Home', path: '#home' },
   { name: 'About', path: '#about' },
+  { name: 'Dev Stack', path: '#tech' },
+  { name: 'Skills', path: '#skills' },
+  { name: 'Education', path: '#education' },
   { name: 'Projects', path: '#projects' },
   { name: 'Contact', path: '#contact' },
 ]
@@ -68,9 +71,9 @@ const NavBar = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <Link href={link.path}
+              <Link   href={link.path}
                 className={`
-                    block py-2 transition-all duration-300
+                    block py-2 transition-all duration-300 text-sm
                        ${pathName === link.path
                     ? 'border-b-2  border-[#d946ef] font-semibold'
                     : 'text-gray-100 hover:text-[#d946ef]'
