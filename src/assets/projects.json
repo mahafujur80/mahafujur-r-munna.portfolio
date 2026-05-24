@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "name": "Project Coming...",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9ZMzEIOwklMVioIiJBYnUZ9VVh0uwcHpDA&s",
-    "overview": "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment gateway integration. Features include order tracking, wishlist, and admin dashboard.", 
-    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Redux Toolkit", "Stripe"],
-    "github": "https://github.com/yourusername/ecommerce-platform",
-    "liveDemo": "https://ecommerce-demo.com",
-    "year": "2024",
-    "category": "Full Stack"
+    "name": "AdoptNest-A Online Pets Adopts Platform .",
+    "image": "https://res.cloudinary.com/dao8rjwiw/image/upload/v1779624691/adopnestimag_y68ruw.png",
+    "overview": "AdoptNest is a fully responsive, modern pet adoption web application built to streamline the process of finding and rehoming pets. It provides a seamless interface where animal lovers can search, filter, and sort through available pets based on species, breed, and location. The platform also features an intuitive user dashboard, allowing users to list pets for adoption, manage their active listings, and track adoption requests in real time.", 
+    "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Better-Auth", "JWT-API"],
+    "github": "https://github.com/mahafujur80/AdoptNest-client",
+    "liveDemo": "https://adopt-nest-client.vercel.app/",
+    "year": "2026",
+    "category": "MERN Stack"
   },
   {
     "id": 2,
