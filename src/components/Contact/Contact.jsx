@@ -11,6 +11,7 @@ import {
 import Link from 'next/link'
 import { GrInstagram } from 'react-icons/gr'
 import { FadeIn } from '../UI-kid/AnimatedSection'
+import ContactForm from './ContactForm'
 
 const Contact = () => {
   return (
@@ -89,7 +90,7 @@ const Contact = () => {
           </div>
 
           {/* right side form */}
-          <FadeIn direction="right" delay={0.4} className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-4 md:p-5 w-full overflow-hidden">
+          {/* <FadeIn direction="right" delay={0.4} className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-4 md:p-5 w-full overflow-hidden">
             <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Send a Message</h3>
             <p className="text-gray-400 text-sm mb-4 md:mb-6">I'll get back to you within 24 hours</p>
             
@@ -118,7 +119,8 @@ const Contact = () => {
                 Send Message →
               </button>
             </form>
-          </FadeIn>
+          </FadeIn> */}
+          <ContactForm/>
         </div>
       </div>
     </section>

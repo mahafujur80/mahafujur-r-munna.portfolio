@@ -91,7 +91,7 @@ const Hero = () => {
                     >
                         {/* Resume Button */}
                         <a
-                            href="#"
+                            href="/Mahafujur-Rahman_Resume.pdf"
                             download
                             className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] text-white font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#a855f7]/50"
                         >

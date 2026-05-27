@@ -88,7 +88,7 @@ const NavBar = () => {
         {/* RESUME BUTTON */}
         <div className='hidden md:block'>
           <motion.a
-            href="/resume.pdf"
+            href="/Mahafujur-Rahman_Resume.pdf"
             download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -139,7 +139,7 @@ const NavBar = () => {
               ))}
 
               <motion.a
-                href="/resume.pdf"
+                href="/Mahafujur-Rahman_Resume.pdf"
                 download
                 whileHover={{ scale: 1.02 }}
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#a855f7]/50 text-center"
