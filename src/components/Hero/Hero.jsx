@@ -101,20 +101,11 @@ const Hero = () => {
 
                         {/* Projects Button */}
                         <Link
-                            href="#"
+                            href="#projects"
                             className="group flex items-center gap-2 px-6 py-3 rounded-xl border border-[#a855f7] text-white font-semibold transition-all duration-300 hover:scale-105 hover:bg-[#a855f7]/20 hover:border-[#d946ef]"
                         >
                             Projects
                             <span className="group-hover:translate-x-1 transition-transform">→</span>
-                        </Link>
-
-                        {/* 🔥 NEW: Hire Me Button */}
-                        <Link
-                            href="#"
-                            className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-semibold transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r hover:from-[#a855f7] hover:to-[#ec4899] hover:border-transparent hover:shadow-lg hover:shadow-[#ec4899]/50"
-                        >
-                            <FaBriefcase />
-                            Hire Me
                         </Link>
                     </motion.div>
 

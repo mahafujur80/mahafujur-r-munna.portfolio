@@ -2,28 +2,28 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
-    try {
-        const { name, email, message, subject } = await request.json();
+  try {
+    const { name, email, message, subject } = await request.json();
 
-        //  SMTP configure
-        const transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
-            },
-        });
+    //  SMTP configure
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
 
-        // email setup
-        const mailOptions = {
-            from: `"${name}" <${process.env.EMAIL_USER}>`,
-            to: process.env.EMAIL_USER,
-            replyTo: email, 
-            subject: `Portfolio: [${subject}]`,
-            text: message,
-            html: `
+    // email setup
+    const mailOptions = {
+      from: `"${name}" <${process.env.EMAIL_USER}>`,
+      to: process.env.EMAIL_USER,
+      replyTo: email,
+      subject: `Portfolio: [${subject}]`,
+      text: message,
+      html: `
   <div style="background-color: #f6f9fc; padding: 40px 10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); border: 1px solid #eef2f6;">
       
@@ -64,14 +64,14 @@ export async function POST(request) {
     </div>
   </div>
 `
-        };
+    };
 
-        // sent email in mail
-        await transporter.sendMail(mailOptions);
+    // sent email in mail
+    await transporter.sendMail(mailOptions);
 
-        return NextResponse.json({ success: true, message: "Email sent successfully!" }, { status: 200 });
+    return NextResponse.json({ success: true, message: "Email sent successfully!" }, { status: 200 });
 
-    } catch (error) {
-        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
-    }
+  } catch (error) {
+    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+  }
 }
