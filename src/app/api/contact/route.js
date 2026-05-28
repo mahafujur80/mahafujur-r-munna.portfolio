@@ -54,17 +54,13 @@ export async function POST(request) {
             </tr>
             <tr>
               <td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; font-weight: 600; color: #64748b; font-size: 14px;">Subject:</td>
-              <td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #1e293b; font-weight: 500; font-size: 15px;">${subject}</td>
+              <td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #1e293b; font-weight: 500; font-size: 15px;"> ${subject}</td>
             </tr>
           </table>
 
           <div style="background-color: #f8fafc; border-left: 4px solid #a855f7; padding: 20px; border-radius: 0 12px 12px 0; border-top: 1px solid #f1f5f9; border-right: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9;">
-            <h4 style="margin: 0 0 8px 0; color: #475569; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">
-              Message:
-            </h4>
-            <p style="margin: 0; color: #334155; line-height: 1.6; white-space: pre-wrap; font-size: 15px;">
-              ${message}
-            </p>
+              <h4 style="margin: 0 0 6px 0; color: #475569; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; line-height: 1;">Message:</h4>
+              <p style="margin: 0; color: #334155; line-height: 1.5; white-space: pre-wrap; font-size: 15px;">${message.trim()}</p>
           </div>
 
         </td>
@@ -118,10 +114,10 @@ export async function POST(request) {
           <!-- Subject Box -->
           <div style="margin: 24px 0; padding: 16px; background-color: #faf5ff; border-left: 4px solid #a855f7; border-radius: 4px;">
             <p style="margin: 0 0 4px 0; color: #701a75; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;">
-              Your Subject
+              Your Subject 
             </p>
             <p style="margin: 0; color: #581c87; font-size: 14px; font-weight: 500; line-height: 1.4;">
-              ${subject}
+               ${subject}
             </p>
           </div>
 
