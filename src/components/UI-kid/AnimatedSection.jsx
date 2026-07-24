@@ -37,3 +37,15 @@ export const FadeIn = ({ children, delay = 0, direction = "up", className = "" }
     </motion.div>
   )
 }
+
+export const ScaleOnTap = ({ children, scale = 0.95, hoverScale = 1.05, className = "" }) => {
+  return (
+    <motion.div
+      whileTap={{ scale }}
+      whileHover={hoverScale ? { scale: hoverScale } : undefined}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  )
+}

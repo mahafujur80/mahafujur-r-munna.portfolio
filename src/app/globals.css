@@ -1,64 +1,19 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
-
-
-/* .btn-primary {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 18px;
-  border-radius: 12px;
-  background: linear-gradient(to right, #a855f7, #d946ef, #ec4899);
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-} */
-
-/* .btn-primary:hover {
-    background: linear-gradient(to left, #a855f7, #d946ef);
-} */
-
-/* .btn-outline {
-  padding: 12px 18px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-} */
-/* 
-.btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-} */
-
-/* .social-icon {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  transition: 0.3s;
+/* ===== Scroll Offset for Sticky Navbar ===== */
+html {
+  scroll-padding-top: 100px;
 }
 
-.social-icon:hover {
- background: linear-gradient(to right, #a855f7, #d946ef, #ec4899);
-} */
+/* ===== Focus Visible for Accessibility ===== */
+*:focus-visible {
+  outline: 2px solid #d946ef;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 
-/* .container {
-  @apply max-w-7xl mx-auto px-4 md:px-8;
-} */
-
-/* .skill-badge {
-  @apply px-4 py-2 rounded-full bg-purple-500/10 border border-purple-400/20 text-sm text-gray-300;
-} */
-
+/* ===== Skill Badge ===== */
 .skill-badge {
   @apply px-3 py-1.5 rounded-full bg-purple-500/10 text-purple-300 
          text-sm font-medium border border-purple-400/30 
@@ -67,23 +22,22 @@
          cursor-default;
 };
 
+/* ===== Animation Utilities ===== */
 @layer utilities {
-  /* লোডিং টাইম অ্যানিমেশন নিয়ন্ত্রণ */
   .no-animation {
     animation: none !important;
     transition: none !important;
   }
 }
 
+/* ===== Hero Floating Animation ===== */
 @keyframes floating {
   0% {
     transform: translateY(0px);
   }
-
   50% {
     transform: translateY(-12px);
   }
-
   100% {
     transform: translateY(0px);
   }
@@ -93,7 +47,7 @@
   animation: floating 3s ease-in-out infinite;
 }
 
-/* lenis  */
+/* ===== Lenis Smooth Scroll ===== */
 html.lenis {
   height: auto;
 }

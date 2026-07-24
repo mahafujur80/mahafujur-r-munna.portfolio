@@ -15,6 +15,7 @@ import {
   SiFirebase,
   SiFigma,
   SiVercel,
+  SiTypescript
 } from "react-icons/si"
 import TechCard from "../UI-kid/TechCard"
 
@@ -24,6 +25,7 @@ const TechStack = () => {
     { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
     { name: "CSS", icon: <FaCss3Alt className="text-blue-500" /> },
     { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
     { name: "React", icon: <FaReact className="text-cyan-400" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
     { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" /> },
@@ -38,24 +40,25 @@ const TechStack = () => {
   return (
     <section
     id="tech"
-      className="px-4 md:px-8 py-20 text-white"
+      className="px-4 md:px-8 py-10 md:py-14 text-white"
     >
 
       <div className="max-w-2xl mx-auto">
 
         {/* TITLE */}
-        <div className="text-center mb-14">
-
-          <h2 className="text-2xl md:text-4xl font-bold">
-            Dev <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Stack</span>
+        <div className="text-center mb-8">
+          <div className="inline-flex px-3 py-1 rounded-full border border-[#d946ef]/20 bg-[#d946ef]/10 text-[#d946ef] text-[10px] font-bold tracking-[0.2em] uppercase mb-3">
+            Dev Stack
+          </div>
+          <h2 className="text-xl md:text-3xl font-bold text-white mb-3">
+            My <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Dev Stack</span>
           </h2>
-          <div className="w-30 h-1 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent mt-2 rounded-full mx-auto"></div>
+          <div className="w-20 h-[2px] bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent rounded-full mx-auto mb-3"></div>
 
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-400 mt-3 text-sm max-w-2xl mx-auto">
             Technologies and tools I use to build modern,
             scalable and user-friendly web applications.
           </p>
-
         </div>
 
         {/* TECH GRID */}

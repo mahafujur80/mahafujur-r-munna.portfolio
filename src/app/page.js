@@ -9,7 +9,7 @@ import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container mx-auto md:px-10">
       <Hero/>
       <AboutMe/>
       <TechStack/>

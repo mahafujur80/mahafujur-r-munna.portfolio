@@ -1,60 +1,36 @@
 'use client'
 import { motion } from 'framer-motion';
 
-const TechCard = ({tech, index}) => {
+const TechCard = ({ tech, index }) => {
     return (
         <motion.div
-            initial={{ 
-                opacity: 0, 
-                y: 50,
-                scale: 0.5        // শুরুতে ছোট (50% সাইজ)
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            whileTap={{ scale: 0.95 }}
+            transition={{
+                duration: 0.5,
+                delay: index * 0.05,
+                ease: "easeOut"
             }}
-            whileInView={{ 
-                opacity: 1, 
-                y: 0,
-                scale: 1          // ভিউতে এলে নরমাল সাইজ (100%)
-            }}
-            viewport={{ 
-                once: true, 
-                amount: 0.3,      // 30% ভিউতে এলে ট্রিগার হবে
-                margin: "-50px"
-            }}
-            transition={{ 
-                duration: 0.6,    // জুম ইন হতে সময়
-                delay: index * 0.1,
-                type: "spring",
-                stiffness: 100,
-                damping: 12
-            }}
-            whileHover={{ 
-                y: -8,            // হভার করলে শুধু উপরে উঠবে
-                transition: { duration: 0.2 }
-            }}
-            className="group cursor-pointer"
+            className="group relative cursor-pointer"
         >
-            <div className="flex flex-col items-center justify-center gap-2">
-                <div>
-                    <motion.div 
-                        whileHover={{ 
-                            scale: 1.1,
-                            rotate: [0, -10, 10, -5, 5, 0],
-                            transition: { duration: 0.5 }
-                        }}
-                        className="text-3xl flex items-center justify-center h-15 w-15 rounded-full bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-400/40 transition-all duration-500"
-                    >
-                        {tech.icon}
-                    </motion.div>
+            {/* Hover Glow Behind Card */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#a855f7] to-[#ec4899] rounded-xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+
+            {/* Main Card */}
+            <div className="relative flex flex-col items-center justify-center gap-2 p-3 md:p-4 w-[78px] md:w-[95px] h-[85px] md:h-[100px] rounded-xl bg-white/5 border border-white/10 backdrop-blur-xl hover:bg-white/10 hover:border-[#d946ef]/40 transition-all duration-300 hover:-translate-y-1.5 shadow-lg shadow-black/20 group-hover:shadow-[0_10px_30px_-10px_rgba(217,70,239,0.3)]">
+                
+                {/* Icon Container */}
+                <div className="text-2xl md:text-3xl transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-6 drop-shadow-[0_0_10px_rgba(255,255,255,0.1)] group-hover:drop-shadow-[0_0_15px_rgba(217,70,239,0.5)]">
+                    {tech.icon}
                 </div>
-                <motion.p 
-                    whileHover={{ 
-                        color: "#d8b4fe",
-                        scale: 1.05,
-                        transition: { duration: 0.2 }
-                    }}
-                    className="text-sm text-gray-300"
-                >
+
+                {/* Tech Name */}
+                <span className="text-[11px] md:text-xs font-semibold text-gray-400 group-hover:text-white transition-colors duration-300 tracking-wide">
                     {tech.name}
-                </motion.p>
+                </span>
+
             </div>
         </motion.div>
     );

@@ -2,7 +2,7 @@ import {
   FaCode, FaServer, FaGitAlt,
   FaHtml5, FaCss3Alt, FaJs, FaReact,
   FaNodeJs, FaDatabase,
-  FaFigma, FaGitAlt as FaGitHub
+  FaFigma, FaGitAlt as FaGitHub, FaBrain
 } from "react-icons/fa"
 import { SiNextdotjs, SiTailwindcss, SiExpress, SiMongodb, SiVercel, SiBetterauth } from "react-icons/si"
 import SkillCard from "../UI-kid/SkillCard"
@@ -12,7 +12,7 @@ const Skills =()=> {
   const skillsData = [
     {
       category: "Frontend",
-      icon: <FaCode className="text-purple-400 text-3xl" />,
+      icon: <FaCode className="text-purple-400 text-2xl" />,
       skills: [
         { name: "HTML", icon: <FaHtml5 className="text-orange-500" />, level: 90 },
         { name: "CSS", icon: <FaCss3Alt className="text-blue-500" />, level: 85 },
@@ -24,7 +24,7 @@ const Skills =()=> {
     },
     {
       category: "Backend",
-      icon: <FaServer className="text-green-400 text-3xl" />,
+      icon: <FaServer className="text-green-400 text-2xl" />,
       skills: [
         { name: "Node.js", icon: <FaNodeJs className="text-green-600" />, level: 85 },
         { name: "Express.js", icon: <SiExpress className="text-white" />, level: 85 },
@@ -36,35 +36,39 @@ const Skills =()=> {
     },
     {
       category: "Tools",
-      icon: <FaGitAlt className="text-orange-400 text-3xl" />,
+      icon: <FaGitAlt className="text-orange-400 text-2xl" />,
       skills: [
         { name: "Git", icon: <FaGitAlt className="text-orange-600" />, level: 85 },
         { name: "GitHub", icon: <FaGitHub className="text-gray-400" />, level: 85 },
-        { name: "Figma", icon: <FaFigma className="text-purple-400" />, level: 70 },
+        { name: "Figma", icon: <FaFigma className="text-pink-500" />, level: 70 },
         { name: "VS Code", icon: <FaCode className="text-blue-500" />, level: 90 },
-        { name: "Vercel", icon: <SiVercel className="text-white" />, level: 85 }
+        { name: "Vercel", icon: <SiVercel className="text-white" />, level: 85 },
+        { name: "Agentic AI", icon: <FaBrain className="text-purple-400" />, level: 80 }
       ]
     }
   ]
 
   return (
-    <section id="skills" className="px-4 md:px-8 py-20 text-white">
+    <section id="skills" className="px-4 md:px-8 py-10 md:py-14 text-white">
       <div className="max-w-6xl mx-auto">
         
         {/* TITLE */}
-         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-4xl font-bold text-gray-200">
-            My <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Expertise</span>
+         <div className="text-center mb-8">
+          <div className="inline-flex px-3 py-1 rounded-full border border-[#d946ef]/20 bg-[#d946ef]/10 text-[#d946ef] text-[10px] font-bold tracking-[0.2em] uppercase mb-3">
+            Skills
+          </div>
+          <h2 className="text-xl md:text-3xl font-bold text-white mb-3">
+            Technical <span className="bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-[#ec4899] bg-clip-text text-transparent">Expertise</span>
           </h2>
-            <div className="w-30 h-1 bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent mt-2 rounded-full mx-auto"></div>
-          <p className="text-gray-400 mt-4 max-w-md mx-auto">
+          <div className="w-20 h-[2px] bg-gradient-to-r from-[#a855f7] via-[#d946ef] to-transparent rounded-full mx-auto mb-3"></div>
+          <p className="text-gray-400 mt-3 text-sm max-w-md mx-auto">
             My development expertise and capabilities.
           </p>
         </div>
 
         {/* SKILLS GRID */}
         <div
-         className="grid md:grid-cols-3 gap-6">
+         className="grid md:grid-cols-3 gap-5">
           {skillsData.map((category, idx) => <SkillCard key={idx} category={category} index={idx}/>)}
         </div>
 
