@@ -106,7 +106,69 @@
     "futurePlans": "Integrate interactive mapping to find nearby animal shelters, add a video-calling feature for pet shelter interviews, and support user-to-shelter messaging out of the box."
   },
   {
-    "id": 3,
+  "id": 3,
+  "slug": "skillforge",
+  "title": "SkillForge - AI Powered Learning Platform",
+  "name": "SkillForge - AI Career & Learning Assistant",
+  "shortDescription": "A full-stack AI-powered learning platform that helps users explore skills, generate personalized learning roadmaps, chat with an intelligent AI mentor, and track learning progress.",
+  "fullDescription": "SkillForge is a modern AI-powered learning platform built to help learners efficiently discover new skills, receive personalized learning guidance, and stay on track with their career goals. Users can explore different technologies, generate customized learning roadmaps, chat with an AI assistant for instant explanations, . The platform combines powerful AI capabilities with a clean, responsive interface to provide an engaging learning experience",
+  "overview": "SkillForge is a full-stack AI learning platform that combines personalized learning roadmaps, AI assistance, resource management, authentication, dashboards, and progress tracking into a single modern application.",
+  "problem": "Many learners struggle to choose the right learning path, find quality resources, stay motivated, and receive instant guidance while learning. Existing platforms often provide content but lack personalized recommendations and AI-powered mentorship.",
+  "solution": "Developed an AI-powered learning platform where users can explore skills, generate personalized learning roadmaps, interact with an AI mentor, save learning resources, and monitor progress through an intuitive dashboard.",
+  "features": [
+    "AI-powered chatbot for instant learning assistance",
+    "Personalized learning roadmap generation",
+    "Explore technologies by category",
+    "Secure authentication with Better Auth and Google Login",
+    "Search, filtering, and pagination",
+    "Responsive design for desktop, tablet, and mobile",
+    "Modern UI with animations, loading states, and smooth interactions"
+  ],
+  "image": "https://res.cloudinary.com/dao8rjwiw/image/upload/v1785390611/skillforge-portfolio-showcase_ovrxgr.png",
+  "thumbnail": "https://res.cloudinary.com/dao8rjwiw/image/upload/v1785390611/skillforge-portfolio-showcase_ovrxgr.png",
+  "images": [
+    "https://res.cloudinary.com/dao8rjwiw/image/upload/v1785390611/skillforge-portfolio-showcase_ovrxgr.png"
+  ],
+  "tech": [
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "Better Auth",
+    "JWT",
+    "Google Gemini API",
+    "React Query"
+  ],
+  "technologies": [
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "Better Auth",
+    "JWT",
+    "Google Gemini API",
+    "React Query"
+  ],
+  "github": "https://github.com/mahafujur80/SkillForge-client",
+  "liveDemo": "https://skill-forge-client-five.vercel.app",
+  "year": "2026",
+  "category": "AI Learning Platform",
+  "featured": true,
+  "role": "Full Stack Developer",
+  "duration": "2 Days",
+  "status": "Completed",
+  "client": "Personal Project",
+  "designTools": [
+    "Figma"
+  ],
+  "architecture": "Next.js, TypeScript, Express.js, MongoDB, Better Auth, JWT, Google Gemini API",
+  "challenges": "The biggest challenge was integrating AI-generated responses while maintaining fast performance and a smooth user experience. Managing secure authentication, preserving chat history, generating dynamic learning roadmaps, protecting dashboard routes, and synchronizing frontend state with backend data required careful architecture and efficient API design.",
+  "futurePlans": "Future improvements include AI interview simulation, coding challenges with AI feedback, resume analysis, mock interview sessions, voice-based AI tutor, learning streaks, certificates, team collaboration, real-time notifications, and Progressive Web App (PWA) support."
+},
+  {
+    "id": 4,
     "slug": "keenkeeper",
     "title": "KeenKeper – Connect & Share Social App",
     "name": "KeenKeper – Connect & Share Social App",
@@ -136,7 +198,7 @@
     "category": "Front-End",
     "featured": false,
     "role": "Frontend Developer",
-    "duration": "2 weeks",
+    "duration": "3 Days",
     "status": "Completed",
     "client": "Programming Hero Assignment",
     "designTools": ["Figma"],
@@ -145,7 +207,7 @@
     "futurePlans": "Develop the backend API endpoints to support user signup, real-time posting, likes, comments, and direct chat messaging."
   },
   {
-    "id": 4,
+    "id": 5,
     "slug": "suncart",
     "title": "SunCart – Summer Special Product Store",
     "name": "SunCart A Summer Special Product Sell Site",
@@ -173,9 +235,9 @@
     "liveDemo": "https://suncart-e-com.vercel.app/",
     "year": "2026",
     "category": "MERN Stack",
-    "featured": true,
+    "featured": false,
     "role": "Full Stack Developer",
-    "duration": "3 weeks",
+    "duration": "2 Days",
     "status": "Completed",
     "client": "Programming Hero Assignment",
     "designTools": ["Figma"],
