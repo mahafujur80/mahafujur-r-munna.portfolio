@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://mahafujur-r-munna.vercel.app/sitemap.xml',
+    sitemap: 'https://mahafujur-dev.vercel.app/sitemap.xml',
   }
 }

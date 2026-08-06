@@ -14,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-space',
 })
 
-const siteUrl = "https://mahafujur-r-munna.vercel.app";
+const siteUrl = "https://mahafujur-dev.vercel.app";
 
 export const metadata = {
   title: "Mahafujur Rahman Munna | Web Developer Portfolio",
@@ -28,6 +28,9 @@ export const metadata = {
     "MERN Stack Developer",
     "React Developer",
     "Portfolio",
+    "Chirirbander",
+    "Dinajpur",
+    "Web Developer Bangladesh",
   ],
   authors: [{ name: "Mahafujur Rahman Munna" }],
   creator: "Mahafujur Rahman Munna",

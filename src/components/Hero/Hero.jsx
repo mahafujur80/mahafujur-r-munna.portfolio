@@ -185,7 +185,7 @@ const Hero = () => {
                                         priority
                                         sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
                                         className="object-cover object-top transition-transform duration-500 hover:scale-105"
-                                        alt="Mahafujur Rahman Munna - Web Developer"
+                                        alt="Mahafujur Rahman Munna"
                                     />
 
                                     {/* Overlay Gradient */}

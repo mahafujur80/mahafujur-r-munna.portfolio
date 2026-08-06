@@ -1,6 +1,6 @@
 import projectData from '@/assets/projects.json'
 
-const siteUrl = 'https://mahafujur-r-munna.vercel.app'
+const siteUrl = 'https://mahafujur-dev.vercel.app'
 
 export default function sitemap() {
   const projectUrls = projectData.map((project) => ({
