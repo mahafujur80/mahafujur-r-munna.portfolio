@@ -5,32 +5,36 @@ import SmoothScrollProvider from "@/provider/SmoothScrollProvider";
 import { Toaster } from "react-hot-toast";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space',
-})
+  subsets: ["latin"],
+  variable: "--font-space",
+});
 
 const siteUrl = "https://mahafujur-dev.vercel.app";
 
 export const metadata = {
   title: "Mahafujur Rahman Munna | Web Developer Portfolio",
   description:
-    "A modern portfolio of Mahafujur Rahman Munna — Web Developer specializing in building fast, responsive, and user-friendly web applications using Next.js, React, and Tailwind CSS.",
+    "Explore the web development portfolio of Mahafujur Rahman Munna, a Next.js and Frontend Web Developer based in Bangladesh specializing in building fast, modern, and responsive web applications.",
   keywords: [
     "Mahafujur Rahman Munna",
-    "Web Developer",
-    "Frontend Developer",
+    "Mahafujur Rahman",
+    "Mahafujur Rahman Munna Portfolio",
     "Next.js Developer",
-    "MERN Stack Developer",
     "React Developer",
-    "Portfolio",
-    "Chirirbander",
-    "Dinajpur",
+    "Frontend Web Developer",
+    "Full Stack Developer",
+    "MERN Stack Developer",
     "Web Developer Bangladesh",
+    "Next.js Developer Bangladesh",
+    "Frontend Developer Dinajpur",
+    "Web Developer Portfolio",
+    "Custom Web Development",
+    "Responsive Web Design",
   ],
   authors: [{ name: "Mahafujur Rahman Munna" }],
   creator: "Mahafujur Rahman Munna",
@@ -39,20 +43,29 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Mahafujur Rahman Munna | Web Developer Portfolio",
+    title: "Mahafujur Rahman Munna | Next.js & Frontend Web Developer",
     description:
-      "A modern portfolio showcasing fast, responsive, and user-friendly web applications built with Next.js, React, and Tailwind CSS.",
+      "Explore the web development portfolio of Mahafujur Rahman Munna, a Next.js and Frontend Web Developer based in Bangladesh.",
     url: siteUrl,
     siteName: "MRM Portfolio",
+    images: [
+      {
+        url: `${siteUrl}/mahafujur-rahman-munna.png`, // public 
+        width: 1200,
+        height: 630,
+        alt: "Mahafujur Rahman Munna Portfolio",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Mahafujur Rahman Munna | Web Developer Portfolio",
-    description:
-      "A modern portfolio showcasing fast, responsive, and user-friendly web applications built with Next.js, React, and Tailwind CSS.",
-  },
+  card: "summary_large_image",
+  title: "Mahafujur Rahman Munna | Next.js & Frontend Web Developer",
+  description:
+    "Explore the web development portfolio of Mahafujur Rahman Munna, a Next.js and Frontend Web Developer based in Bangladesh.",
+  images: ["https://mahafujur-dev.vercel.app/mahafujur-rahman-munna.png"], // picture
+},
   robots: {
     index: true,
     follow: true,
@@ -71,18 +84,17 @@ const jsonLd = {
   url: siteUrl,
   jobTitle: "Web Developer",
   sameAs: [
+    "https://mahafujur-dev.vercel.app",
     "https://github.com/mahafujur80",
     "https://www.linkedin.com/in/mahafujur-rahman-munna/",
     "https://www.facebook.com/mahafujurrahman480",
+    "https://www.instagram.com/mahafujur80?igsh=dHhhZDduazJ2ODBh",
   ],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`h-full antialiased`}
-    >
+    <html lang="en" className={`h-full antialiased`}>
       <head>
         <script
           type="application/ld+json"
@@ -94,9 +106,7 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         <SmoothScrollProvider>
-            <main>
-              {children}
-            </main>
+          <main>{children}</main>
         </SmoothScrollProvider>
         <Toaster />
       </body>
